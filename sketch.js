@@ -19,9 +19,9 @@ function setup() {
   engine = Engine.create();
   world = engine.world;
   var option={
-    isStatic:false
+    isStatic:true
   };
-  ground=Bodies.rectangle(100,300,400,20);
+  ground=Bodies.rectangle(100,300,400,20, option);
   World.add(world,ground);
   box1 = new Box(200,100,50,50);
   
